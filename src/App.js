@@ -30,12 +30,21 @@ class App {
                 for (const car of cars) Console.print(formatCarLine(car));
                 Console.print("");
             }
+
             Console.print(formatWinners(cars));
         } catch (e) {
-            const msg = String(e?.message ?? e);
-            Console.print(msg.startsWith("[ERROR]") ? msg : `[ERROR] ${msg}`);
+            const raw = String(e?.message ?? e);
+            const msg = raw.startsWith("[ERROR]") ? raw : `[ERROR] ${raw}`;
+            Console.print(msg);
+
+            throw new Error(msg);
         }
     }
 }
 
 export default App;
+
+export const run = async () => {
+    const app = new App();
+    return app.run();
+};
