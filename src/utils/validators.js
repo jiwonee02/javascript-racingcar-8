@@ -1,4 +1,4 @@
-import { NAME_MAX_LEN, RANDOM_MIN, RANDOM_MAX } from "./constants";
+import { NAME_MAX_LEN, RANDOM_MIN, RANDOM_MAX } from "./constants.js";
 
 function isBlank(str) {
     return typeof str !== "string" || str.trim().length === 0;

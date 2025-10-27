@@ -1,5 +1,5 @@
 import { Random } from "@woowacourse/mission-utils";
-import { RANDOM_MIN, RANDOM_MAX, MOVE_THRESHOLD } from "../utils/constants";
+import { RANDOM_MIN, RANDOM_MAX, MOVE_THRESHOLD } from "../utils/constants.js";
 
 export default class RacingGame {
     #cars;

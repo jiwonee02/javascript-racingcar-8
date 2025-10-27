@@ -1,11 +1,11 @@
 import { Console } from "@woowacourse/mission-utils";
-import Car from "./models/Car";
-import RacingGame from "./services/RacingGame";
+import Car from "./models/Car.js";
+import RacingGame from "./services/RacingGame.js";
 import {
     parseAndValidateNames,
     parseAndValidateRounds,
-} from "./utils/validators";
-import { formatCarLine, formatWinners } from "./io/formatter";
+} from "./utils/validators.js";
+import { formatCarLine, formatWinners } from "./io/formatter.js";
 
 async function ask(q) {
     return Console.readLineAsync(q);
