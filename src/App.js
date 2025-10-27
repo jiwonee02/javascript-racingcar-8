@@ -43,8 +43,3 @@ class App {
 }
 
 export default App;
-
-export const run = async () => {
-    const app = new App();
-    return app.run();
-};
